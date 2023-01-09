@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- <img src="alura.png" alt="Logo de Alura"> -->
+        </header>
+
+        <main>
+            <textarea type="text" id="texto" class="input" rows="20" cols="100" required placeholder="Ingrese el texto aquí"></textarea>
+
+            <button type="button" id="encriptar" onclick="encriptarTexto()">Encriptar</button>
+            <button type="button" id="desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+        </main>
+
+        <script>
+            function imprimir(frase)
+            {
+                document.write(frase);
+            }
+
+            function encriptarTexto()
+            {
+                var texto = document.getElementById("texto").value;
+                var i = 0;
+                var letraConversion;
+                var textoConvertido = "";
+                for(i; i < texto.length; i++)
+                {
+                    switch(texto[i])
+                    {
+                        case "a": letraConversion = "ai"; break;
+                        case "e": letraConversion = "enter"; break;
+                        case "i": letraConversion = "imes"; break;
+                        case "o": letraConversion = "ober"; break;
+                        case "u": letraConversion = "ufat"; break;
+
+                        default: letraConversion = texto[i];
+                    }
+
+                    textoConvertido = textoConvertido + letraConversion;
+                }
+                imprimir(textoConvertido);
+            }
+
+            function desencriptarTexto()
+            {
+                var texto = document.getElementById("texto").value;
+            }
+        </script>
+
+
+
+    </body>
+
+</html>
+
