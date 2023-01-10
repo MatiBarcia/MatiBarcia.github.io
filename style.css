@@ -20,7 +20,7 @@ body
 
 .logo
 {
-    width: 100%;
+    width: 51%;
     float: left;
 }
 
@@ -42,7 +42,7 @@ body
     background: white;
     text-align: center;
     margin-right: 1%;
-    /* padding: 7% 0; */
+    padding: 3% 0;
 }
 
 .left-button
@@ -89,7 +89,7 @@ span /* exclamacion */
 .text-input
 {
     float: left;
-    margin: 10% 5% 10% 10%;
+    margin: 5% 5% 0% 10%;
     width: 80%;
     height: 80%;
     color: #0A3871;
@@ -104,7 +104,7 @@ span /* exclamacion */
 
 #imgDer
 {
-    margin-top: 40%;
+    margin-top: 5%;
     margin-left: 2%;
     width: 90%;
     height: auto;
@@ -123,7 +123,7 @@ span /* exclamacion */
 #texto2
 {
     margin-top: 5%;
-    margin-bottom: 30%;
+    margin-bottom: auto;
     color: #0A3871;
     width: 90%;
     height: auto;
@@ -199,3 +199,14 @@ span /* exclamacion */
     cursor: pointer;
     float: bottom;
 }
+
+/* @media only screen and (min-width: 768px) 
+{
+    .logo
+    {
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} */
