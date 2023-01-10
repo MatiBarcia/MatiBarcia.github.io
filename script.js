@@ -13,7 +13,7 @@ function encriptarTexto()
     document.getElementById("texto2").innerHTML = txtCifrado;
     document.getElementById("copiar").style.display = "show";
     document.getElementById("copiar").style.display = "inherit";
-    document.getElementById("texto2").setAttribute("rows", "25");
+    document.getElementById("texto2").style.height = "17em";
     document.getElementById("copiar").style.marginBottom = "5%";
 }
 
